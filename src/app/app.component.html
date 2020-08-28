@@ -1,16 +1,32 @@
+<!-- NgClass with a String -->
 <div [ngClass]="'red size20'"> Red Text with Size 20px </div>
 
 <div class="row">     
   <div ngClass='red size20'>Red Text with Size 20px </div> 
 </div>
 
+<!-- NgClass with Array -->
 <div [ngClass]="['red','size20']">Red Text with Size 20px </div>
 
+<!-- NgClass with Object -->
 <div class="row">     
   <div [ngClass]="{'red':true,'size20':true}">Red Text with Size 20px</div>
 </div>
  
+<!-- Dynamically updating Class names -Using strings -->
 <div class="row">     
   <div [ngClass]="cssStringVar">Red Text with Size 20px : from component     </div> 
 </div>
  
+<!-- Dynamically updating Class names -Using arrays -->
+<div class="row">
+  <div [ngClass]="cssArray">
+    Red Text with Size 20px  : from CSS Array
+  </div>
+</div>
+
+<!-- Dynamically updating Class names -Using JavaScript object -->
+<div class="row">     
+  <div [ngClass]="cssClass"> Red Text with Size 20px : from component as object</div> 
+</div>
+

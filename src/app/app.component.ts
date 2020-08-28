@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ngclass-test';
   cssStringVar: string= 'red size20';
+  cssArray:string[]=['red','size20']; 
+  cssClass: CssClass = new CssClass();
+
+}
+class CssClass {
+  red: boolean= true;
+  size20: boolean= true; 
 }
