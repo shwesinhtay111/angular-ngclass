@@ -27,13 +27,16 @@ NgClass with Object
 Dynamically updating Class names
 ====================================
 Using strings
+
 cssStringVar: string= 'red size20';
 
 Using arrays
+
 cssArray:string[]=['red','size20']; 
 
 
 Using JavaScript object
+
 class CssClass {
   red: boolean= true;
   size20: boolean= true; 
