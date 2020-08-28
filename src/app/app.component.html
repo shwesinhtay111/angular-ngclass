@@ -1,0 +1,16 @@
+<div [ngClass]="'red size20'"> Red Text with Size 20px </div>
+
+<div class="row">     
+  <div ngClass='red size20'>Red Text with Size 20px </div> 
+</div>
+
+<div [ngClass]="['red','size20']">Red Text with Size 20px </div>
+
+<div class="row">     
+  <div [ngClass]="{'red':true,'size20':true}">Red Text with Size 20px</div>
+</div>
+ 
+<div class="row">     
+  <div [ngClass]="cssStringVar">Red Text with Size 20px : from component     </div> 
+</div>
+ 
