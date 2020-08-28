@@ -1,3 +1,43 @@
+ngClass
+========
+-adds and removes CSS classes on an HTML element
+
+Syntax
+=======
+    <element [ngClass]="expression">...</element>
+ 
+where 
+-element is the DOM element to which class is being applied
+-expression is evaluated and the resulting classes are added/removed from the element. The expression can be in various formats like string, array or an object
+
+NgClass with a String
+========================
+    <element [ngClass]="'cssClass1 cssClass2'">...</element>
+
+NgClass with Array
+=====================
+    <element [ngClass]="['cssClass1', 'cssClass2']">...</element>
+
+NgClass with Object
+=======================
+    <element [ngClass]="{'cssClass1': true, 'cssClass2': true}">...</element>
+
+
+
+Dynamically updating Class names
+====================================
+Using strings
+cssStringVar: string= 'red size20';
+
+Using arrays
+cssArray:string[]=['red','size20']; 
+
+
+Using JavaScript object
+class CssClass {
+  red: boolean= true;
+  size20: boolean= true; 
+}
 # NgclassTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
